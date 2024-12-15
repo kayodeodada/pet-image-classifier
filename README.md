@@ -1,6 +1,6 @@
 # Pet Image Classifier
 
-Welcome to the **Pet Image Classifier** project! This repository implements a Python-based application that uses a pretrained Convolutional Neural Network (CNN) model to classify pet images, compare predictions to ground-truth labels, and summarize the performance of various CNN architectures. The repository is a fork of [AIPND-revision/intropyproject-classify-pet-images](https://github.com/udacity/AIPND-revision/tree/master/intropyproject-classify-pet-images), developed as part of Udacity’s **AI Programming with Python** Nanodegree.
+Welcome to the **Pet Image Classifier** project! This repository implements a Python-based application that uses a pretrained Convolutional Neural Network (CNN) model to classify pet images, compare predictions to ground-truth labels, and summarize the performance of various CNN architectures. The project is developed as part of Udacity’s **AI Programming with Python** Nanodegree.
 
 ---
 
