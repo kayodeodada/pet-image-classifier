@@ -58,15 +58,39 @@ python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 
 ---
 
-## Results
+## Results Summary
+
+The classification results for the three CNN architectures are as follows:
+
+| **Metric**                  | **AlexNet**   | **ResNet**   | **VGG**      |
+|-----------------------------|---------------|--------------|--------------|
+| **Total Images**            | 40            | 40           | 40           |
+| **Dog Images**              | 30            | 30           | 30           |
+| **Not-Dog Images**          | 10            | 10           | 10           |
+| **% Correct Dogs**          | 100.00%       | 100.00%      | 100.00%      |
+| **% Correct Not-Dogs**      | 100.00%       | 90.00%       | 100.00%      |
+| **% Correct Breed**         | 80.00%        | 90.00%       | 93.33%       |
+| **% Match**                 | 75.00%        | 82.50%       | 87.50%       |
 
 The program evaluates the performance of each model architecture based on the following metrics:
 
-| Model    | Accuracy | Precision | Recall | F1-Score |
-|----------|----------|-----------|--------|----------|
-| VGG      | 94.5%    | 92.8%     | 93.7%  | 93.2%    |
-| AlexNet  | 91.2%    | 89.4%     | 90.1%  | 89.8%    |
-| ResNet   | 96.3%    | 95.1%     | 95.8%  | 95.4%    |
+| **Metric**       | **AlexNet**   | **ResNet**   | **VGG**      |
+|------------------|---------------|--------------|--------------|
+| **Accuracy**     | 75.00%        | 82.50%       | 87.50%       |
+| **Precision**    | 100.00%       | 95.00%       | 97.00%       |
+| **Recall**       | 80.00%        | 90.00%       | 93.33%       |
+| **F1-Score**     | 88.89%        | 92.44%       | 95.08%       |
+
+### Observations
+
+1. **Dog Classification**: All three models achieved 100% accuracy for identifying dogs.
+2. **Not-Dog Classification**:
+   - AlexNet and VGG achieved 100%.
+   - ResNet achieved 90%, showing slightly lower performance in identifying non-dog images.
+3. **Breed Accuracy**:
+   - VGG had the highest accuracy at 93.33%, followed by ResNet at 90%, and AlexNet at 80%.
+4. **Overall Match**:
+   - VGG had the best match rate (87.50%), followed by ResNet (82.50%) and AlexNet (75.00%).
 
 ---
 
